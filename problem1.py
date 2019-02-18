@@ -8,20 +8,16 @@
 # ###########################################################
 #
 # Describe the program
-print("Program to find the sum of all numbers from 1 to a number")
+print("Program to find the sum of all numbers from 1 to a number",
+"-digits to right of decimal point are discarded", sep="\n")
 
-# Request input and check type
-test = input("a number? ")
-print(test, type(test)) # returns <class 'str'>
-print(float(test))
-test2 = float(test)
-if test2 % 2 != 0:
-    print("int please")
-quit()
+# Request the input, for now assume a number
+num = input("Please enter a positive integer: ")
+numflt = float(num)
+# print (numflt, type(numflt))
 
-# Request the input, for now assume integer
-n = int(input("Please enter a positive integer: "))
-print(n)
+n = int(numflt) # Keep only integer part of number
+# print(n, type(n))
 
 # Check if n is a positive integer
 # break to exit loop, quit() to exit program
@@ -33,10 +29,10 @@ else:
 
 # Generate a list containing the numbers from 1 to n
 numlist = list(range(1,n+1))
-print(numlist)
+# print(numlist)
 
 # Sum the elements in the list
 ans = sum(numlist)
 print("The sum of all numbers from 1 to", n, "is: ", ans)
 
-# Still get error if enter 1.5, need to fix: type()
+# Program now handles floats, 0, -ve
