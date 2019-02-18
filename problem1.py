@@ -7,14 +7,26 @@
 #
 # ###########################################################
 #
-# Request the input
+# Describe the program
+print("Program to find the sum of all numbers from 1 to a number")
+
+# Request input and check type
+test = input("a number? ")
+print(test, type(test)) # returns <class 'str'>
+print(float(test))
+test2 = float(test)
+if test2 % 2 != 0:
+    print("int please")
+quit()
+
+# Request the input, for now assume integer
 n = int(input("Please enter a positive integer: "))
 print(n)
 
 # Check if n is a positive integer
 # break to exit loop, quit() to exit program
 if n == 0 or n < 0:
-    print("Input must be positive integer")
+    print("Input must be a positive integer")
     quit()
 else:
     print("Input is good")
