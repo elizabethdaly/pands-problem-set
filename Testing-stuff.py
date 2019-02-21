@@ -1,3 +1,5 @@
+# My scratch file for testing things
+
 num = input("Please enter a positive integer: ")
 try:
     float(num)
