@@ -15,6 +15,10 @@ Used stackoverflow to investigate how to reject incorrect keyboard input:
 [https://stackoverflow.com/a/5424739]
 
 ## Problem 2
+File: problem2.py
+Used stackoverflow to check how to extract the day name from the 
+day of week integer that datetime returns.
+[https://stackoverflow.com/a/36341648]
 
 ## Problem 3
 
