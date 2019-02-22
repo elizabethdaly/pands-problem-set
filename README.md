@@ -1,7 +1,7 @@
 # pands-problem-set
-Elizabeth Daly
-Jan-Mar 2019
-HDip Data Analytics 2019 Programming and Scripting Problem Set
+## Elizabeth Daly
+## Jan-Mar 2019
+## HDip Data Analytics 2019 Programming and Scripting Problem Set
 
 Git-hub depository at:
 [https://github.com/elizabethdaly/pands-problem-set.git]
