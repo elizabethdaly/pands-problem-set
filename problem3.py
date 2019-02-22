@@ -11,19 +11,28 @@
 print("Program to print all numbers between 1,000 and 10,000",  
 "that are divisible by 6 but not by 12.", sep="\n")
 
-# Generate the list containing the numbers to check.
-ns = 1      # start number
-ne = 50     # end number
+# What are the numbers?
+ns = 1000   # start number
+ne = 10000  # end number
 
-# Rem first element of list is index 0.
+# Generate the list containing the numbers to check.
+# Rem first element of list is index 0, last is length-1.
+# Check that first and last numbers are correct
 nums = list(range(ns,ne + 1))
 lnum = len(nums)
-print("This list has", len(nums), "elements.")
+print("The list to check has", len(nums), "elements from.", nums[0], "to", nums[lnum-1])
 
+# Create an empty list to hold the answer.
+ans = []
+# If both conditions are true (/6 AND not /12) put number in new list)
 for x in nums:
     if (x % 6 == 0) and (x % 12 != 0):
-        print(x, "divisible by 6 but not by 12")
+        # print(x, "divisible by 6 but not by 12")
+        ans.append(x)
     else:
         continue
 
-
+lans = len(ans)
+print(lans, "numbers are divisible by 6 but not by 12. They are:")
+print(ans)
+# print(*ans, sep = "\n") # Print each list element on a new line.
