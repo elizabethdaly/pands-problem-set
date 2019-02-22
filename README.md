@@ -44,6 +44,6 @@ I also wrote the program to check the first condition on the original list, is n
 ## Problem 4
 **File:** problem4.py
 
-Write a program that 
+Write a program that asks the user to input
 
 
