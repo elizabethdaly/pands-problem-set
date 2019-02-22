@@ -14,16 +14,26 @@ print("Program to check if today begins with a T")
 # Import Python datetime module
 import datetime
 
-# Import Python calendar module
+# Import Python calendar module for names of weekday.
 import calendar
 
 # First of all check what day number it is.
 d = datetime.datetime.today().weekday()
 print("It's day number", d, ", 0 being Monday")
 
-# Could just match the integer d to a list containing 7 day names
-# to extract the name of the day. Python does this via day_name[].
+# Match the integer d to a list containing 7 day names to extract 
+# the name of the day. 
+# Python does this via day_name[].
 dname = calendar.day_name[d]
-print("It's ",dname)
+# print(dname)
 
 # Now check if today begins with T.
+# Days beginning with T are 1 (Tuesday) and 3 (Thursday).
+if d == 1 or d == 3:
+    print("Yes - today begins with a T, it's", dname, ".")
+else:
+    print ("No - today does not begin with a F, it's", dname, ".")
+
+# An alternative (but more complicated) way to do this would be
+# to check if the first letter in the string dname is a "T". 
+# type(dname) returns <class 'str'>
