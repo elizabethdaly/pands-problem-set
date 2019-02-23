@@ -39,11 +39,11 @@ https://stackoverflow.com/a/36341648
 Write a program that prints all numbers between 1,000 and 10,000 that are divisible by 6 but not by 12.
 
 I first approached it by generating a list containing all the numbers to check. Both conditions were checked at the same time, is number divisible by 6 AND not by 12? I stored the answer in a new list.
-I also wrote the program to check the first condition on the original list, is number divisible by 6? I then checked the second condition on the shorther list, is number NOT divisible by 12? Not sure which is better but both work.
+I also wrote the program to check the first condition on the original list, is number divisible by 6? I then checked the second condition on the shorther list, is number NOT divisible by 12? Not sure which is better/faster, but both work.
 
 ## Problem 4
 **File:** problem4.py
 
-Write a program that asks the user to input
+Write a program that asks the user to input any positive integer and outputs the successive values of the following calculation. At each step calculate the next value by taking  the current calue and, if it is even, divide by two, but if it is odd, multiply by three and add one. Have the progam end if the current value is one.
 
 
