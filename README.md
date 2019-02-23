@@ -46,4 +46,8 @@ I also wrote the program to check the first condition on the original list, is n
 
 Write a program that asks the user to input any positive integer and outputs the successive values of the following calculation. At each step calculate the next value by taking  the current calue and, if it is even, divide by two, but if it is odd, multiply by three and add one. Have the progam end if the current value is one.
 
+As in problem 1, I used try except else to reject input that is not of type int. If the input is an integer
+I then check to make sure it's not zero or negative.
+
+
 
