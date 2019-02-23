@@ -12,20 +12,43 @@
 print("Program to print the Collatz sequence of a number n.")
 
 # Request the input.
-num = input("Please enter a positive integer: ")
+n = input("Please enter a positive integer: ")
 
 # Check that the input is acually an integer.
 # If it's not then quit the program.
 # If it is, but is zero or negative, also quit the program.
 try:
-    int(num)
+    int(n)
 except ValueError:
     print("Only integers please. Run the program again.")
     quit()
 else:
-    if int(num) <= 0:
+    if int(n) <= 0:
         print("Zero and negative integers not allowed.")
         quit()
     else:
         print("Input is good.")
+    
+# Empty list to store sequence
+collatz = []
 
+# Starting vlaue of while loop & first number in sequence.
+j = int(n)
+
+# Stop when j=1 (saying j>=1 here gives infinite loop)
+while j > 1:
+    # print(j) # checking
+    # If j even do j/2 and store new j
+    if j % 2 == 0:          
+        j = j/2
+        collatz.append(int(j))
+    # If j odd do j*3+1 and store new j 
+    else:
+        j = j*3 + 1
+        collatz.append(int(j))
+        continue
+# Add starting value of j to start of list
+
+
+# Print the answer
+print(collatz)
