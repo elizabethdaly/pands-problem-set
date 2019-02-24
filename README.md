@@ -1,6 +1,6 @@
 # pands-problem-set
 ## Elizabeth Daly
-### Jan-Mar 2019
+### January-April 2019
 ### HDip Data Analytics 2019 Programming and Scripting Problem Set
 
 Git-hub depository at:
@@ -39,15 +39,19 @@ https://stackoverflow.com/a/36341648
 Write a program that prints all numbers between 1,000 and 10,000 that are divisible by 6 but not by 12.
 
 I first approached it by generating a list containing all the numbers to check. Both conditions were checked at the same time, is number divisible by 6 AND not by 12? I stored the answer in a new list.
-I also wrote the program to check the first condition on the original list, is number divisible by 6? I then checked the second condition on the shorther list, is number NOT divisible by 12? Not sure which is better/faster, but both work.
+I also wrote the program to check the first condition on the original list, is number divisible by 6? I then checked the second condition on the shorter list, is number NOT divisible by 12? Not sure which is better/faster, but both work.
+
+Python tutorial for timeit module to measure code exection speed. https://docs.python.org/3/library/timeit.html?highlight=timeit#module-timeit
 
 ## Problem 4
 **File:** problem4.py
 
 Write a program that asks the user to input any positive integer and outputs the successive values of the following calculation. At each step calculate the next value by taking  the current calue and, if it is even, divide by two, but if it is odd, multiply by three and add one. Have the progam end if the current value is one.
 
-As in problem 1, I used try except else to reject input that is not of type int. If the input is an integer
+As in problem 1, I used try-except-else to reject input that is not of type int. If the input is an integer
 I then check to make sure it's not zero or negative.
+
+Looked up how to add an element to the biginning of a list on stackoverflow: https://stackoverflow.com/a/17911209
 
 
 
