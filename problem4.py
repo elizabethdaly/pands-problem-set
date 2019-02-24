@@ -11,6 +11,9 @@
 # Describe the program to the user.
 print("Program to print the Collatz sequence of a number n.")
 
+# timeit module to measure code exection speed.
+from timeit import default_timer as timer
+
 # Request the input.
 n = input("Please enter a positive integer: ")
 
@@ -28,14 +31,18 @@ else:
         quit()
     else:
         print("Input is good.")
-    
-# Empty list to store sequence
+
+# Start timer.
+ts = timer()
+
+# Create an empty list to store sequence.
 collatz = []
 
 # Starting vlaue of while loop & first number in sequence.
-j = int(n)
+n = int(n)
+j = n
 
-# Stop when j=1 (saying j>=1 here gives infinite loop)
+# Stop when j=1 (saying j>=1 here gives infinite loop).
 while j > 1:
     # print(j) # checking
     # If j even do j/2 and store new j
@@ -47,8 +54,21 @@ while j > 1:
         j = j*3 + 1
         collatz.append(int(j))
         continue
-# Add starting value of j to start of list
 
+# Add the original number n to start of list.
+collatz.insert(0,n)
+
+# Stop timer.
+tf = timer()
 
 # Print the answer
 print(collatz)
+
+# and time taken.
+print("Time taken:", tf - ts, "s")
+
+# Don't know that there's any obvious pattern, for example:
+# n = 10 takes 4.129 e-5 s
+# n = 11 takes 5.110 e -5 s
+# n = 1000000 takes 29.59 e-5 s
+# n = 1000001 takes 20.109 e-5 s
