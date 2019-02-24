@@ -39,8 +39,8 @@ ts = timer()
 collatz = []
 
 # Starting vlaue of while loop & first number in sequence.
-n = int(n)
-j = n
+m = int(n)
+j = m
 
 # Stop when j=1 (saying j>=1 here gives infinite loop).
 while j > 1:
@@ -56,7 +56,7 @@ while j > 1:
         continue
 
 # Add the original number n to start of list.
-collatz.insert(0,n)
+collatz.insert(0,m)
 
 # Stop timer.
 tf = timer()
