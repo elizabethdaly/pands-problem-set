@@ -51,7 +51,7 @@ Write a program that asks the user to input any positive integer and outputs the
 As in problem 1, I used try-except-else to reject input that is not of type int. If the input is an integer
 I then check to make sure it's not zero or negative.
 
-Looked up how to add an element to the biginning of a list on stackoverflow: https://stackoverflow.com/a/17911209
+Looked up how to add an element to the beginning of a list on stackoverflow: https://stackoverflow.com/a/17911209
 
 
 
