@@ -26,7 +26,17 @@ else:
     if int(n) <= 0:
         print("Zero and negative integers not allowed.")
         quit()
-    else:
-        print("Input is good.")
+    # else: # Thought there always had to be an else clause, but no.
+    #     print("Input is good.")
 
-# Start with some simple checks. =1 or even
+p = int(n)
+
+# Start with a simple check: is p=1 or even? Also dismiss p=2.
+if p == 1 or (p % 2 == 0 or p == 2):
+    print("1 and even numbers (except 2) are not prime.")
+    quit()
+
+# So now we know the number is !=2, odd, and > 1.
+
+
+print("Finished")
