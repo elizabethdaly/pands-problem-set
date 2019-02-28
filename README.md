@@ -60,6 +60,6 @@ Write a program that asks the user to input a positive integer and tells the use
 I used try-except-else to reject input that is not a positive integer. If it is an integer I dismiss 1 and all even numbers apart from 2.
 
 I researched primality tests in a few places:
-The Sieve of Eratosthenes: http://mathforum.org/dr.math/faq/faq.prime.num.html
-The trial division test: https://www.wikihow.com/Check-if-a-Number-Is-Prime
-which involves dividing the number by each prime to floor(the number). The drawback of this method is that it requires one to know the primes up to floor(n); I assume we don't know those. As a compromise, I will attempt to divide n by all odd numbers up to floor(n) instead, while avoiding multiples of 3, 5, 7.
+* The Sieve of Eratosthenes: http://mathforum.org/dr.math/faq/faq.prime.num.html
+* The trial division test: https://www.wikihow.com/Check-if-a-Number-Is-Prime
+which involves dividing the number by each prime to floor(sqrt(the number)). The drawback of this method is that it requires one to know the primes up to floor(sqrt(n)); I assume we don't know those. As a compromise, I will attempt to divide n by all odd numbers up to that limit instead, while avoiding multiples of 3, 5, 7.
