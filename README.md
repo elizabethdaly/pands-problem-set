@@ -63,7 +63,7 @@ I researched primes & primality tests in a few places:
 * Wikipedia: https://en.wikipedia.org/wiki/Prime_number
 * The Sieve of Eratosthenes: http://mathforum.org/dr.math/faq/faq.prime.num.html
 * The trial division test: https://www.wikihow.com/Check-if-a-Number-Is-Prime
-which involves dividing the number (n) by each prime to floor(sqrt(n)). The drawback of this method is that it requires one to know the primes up to floor(sqrt(n)); I assume we don't know those. As a compromise, I will attempt to divide n by all odd numbers up to that limit instead, while avoiding multiples of some of those odd numbers that we know are prime: 3, 5, 7, 11, 13, 17, etc.
+which involves dividing the number (n) by each prime to floor(sqrt(n)). The drawback of this method is that it requires one to know the primes up to floor(sqrt(n)); I assume we don't know those. As a compromise, I will attempt to divide n by all odd numbers from 3 up to that limit instead. Could save some time by avoiding multiples of some of those odd numbers that we know are prime: 3, 5, 7, 11, 13, 17, etc.
 
 
 ## Problem 8
