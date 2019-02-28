@@ -57,7 +57,7 @@ Looked up how to add an element to the beginning of a list on stackoverflow: htt
 
 Write a program that asks the user to input a positive integer and tells the user whether or not the number is a prime.
 
-I used try-except-else to reject input that is not a positive integer. If it is an integer I dismiss 1 and all even numbers apart from 2.
+I used try-except-else to reject input that is not a positive integer. I then dismiss 1 and all even numbers apart from 2.
 
 I researched primes & primality tests in a few places:
 * Wikipedia: https://en.wikipedia.org/wiki/Prime_number
