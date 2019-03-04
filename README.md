@@ -70,3 +70,12 @@ which involves dividing the number (n) by each prime to floor(sqrt(n)). The draw
 **File:** problem8.py
 
 Write a program that outputs today's date and time in the format "Monday, January 10th 2019 at 1.15pm"
+
+Python Standard Library for datetime module: https://docs.python.org/3/library/datetime.html?highlight=datetime%20module#module-datetime
+
+Python Documentation for instructions on formatting year, month day etc
+strftime() and strptime() Behavior: https://docs.python.org/3/library/datetime.html?highlight=strftime#strftime-strptime-behavior
+
+On first attempt have zero padding on day & hour, no suffix for day, and PM/AM instead of pm/am.
+
+I used stackoverflow to get rid of leading zero in date: https://stackoverflow.com/questions/904928/python-strftime-date-without-leading-0
