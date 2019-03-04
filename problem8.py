@@ -30,4 +30,5 @@ print(dt.datetime.strftime(d,"%A, %B%e %Y at %I:%M%p"))
 # %e Day of month NO zero-padding
 # %Y Year with century
 # %I Hour as zero-padded decimal(12 hour clock)
+# %M Minutes
 # %p AM/PM
