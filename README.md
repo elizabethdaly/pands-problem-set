@@ -65,11 +65,24 @@ I researched primes & primality tests in a few places:
 * The trial division test: https://www.wikihow.com/Check-if-a-Number-Is-Prime
 which involves dividing the number (n) by each prime to floor(sqrt(n)). The drawback of this method is that it requires one to know the primes up to floor(sqrt(n)); I assume we don't know those. As a compromise, I will attempt to divide n by all odd numbers from 3 up to that limit instead. Could save some time by avoiding multiples of some of those odd numbers that we know are prime: 3, 5, 7, 11, 13, 17, etc.
 
+## Problem 7
+**File:** problem7.py
+
+**Write a program that takes a positive floating point number as input and outputs an approximation of its square root.**
+
+I researched methods of estimating square roots and found some interesting links:
+* Khan Academy: https://www.khanacademy.org/math/pre-algebra/pre-algebra-exponents-radicals/pre-algebra-square-roots/v/approximating-square-roots
+This method is based on finding the closest perfect squares (less than and greater than) the number. I am assuming that we don't necessarily know those, and certainly not for big numbers. Conclude that this method is more suited to a manual calculation.
+* The digit by digit method: https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Digit-by-digit_calculation
+* The Babylonian method: https://en.wikipedia.org/wiki/Methods_of_computing_square_roots
+* The Bakhshali method: link as above.
+
+I decided to try the Babylonian method first. An initial guess for the square root is required. 
 
 ## Problem 8
 **File:** problem8.py
 
-Write a program that outputs today's date and time in the format "Monday, January 10th 2019 at 1.15pm"
+**Write a program that outputs today's date and time in the format "Monday, January 10th 2019 at 1.15pm"**
 
 Python Standard Library for datetime module: https://docs.python.org/3/library/datetime.html?highlight=datetime%20module#module-datetime
 
