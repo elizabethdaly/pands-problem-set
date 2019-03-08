@@ -45,7 +45,9 @@ iter = 100
 tol = 0.0000001
 
 # Initial guess for the square root, the closer to sqrt(s) the better.
-x = s/2
+# As the best guess depends on the number, s, one could ask the user to
+# provide it. To keep things simple, I'm going to pick a default value.
+x = 0.1*s
 
 # Start loop counter
 i = iter
@@ -73,4 +75,11 @@ print("Number of iterations:", (iter - i + 1))
 # Guess = s/2, iterations taken = 18 (If s=4, sqrt(4)=s/2)
 # Guess = s, iterations taken = 19 (If s=1, sqrt(1)=1)
 # Guess = 2*s, iterations taken = 20 (A ridiculous guess!)
-# So best guess depends on value of s. I'll leave s/2 as default.
+
+# Test program with s = 0.123456789
+# Answer = 0.35
+# Guess = 0.1*s, iterations taken = 9
+# Guess = s/2, iterations taken = 7
+# Guess = s, iterations taken = 6
+# Guess = 2*s, iterations taken = 5
+# So best guess depends on value of s. I'll leave 0.1s by default.
