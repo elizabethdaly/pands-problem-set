@@ -27,7 +27,25 @@ else:
         print("Zero and negative numbers not allowed.")
         quit()
 
-# Numbet to test.
+# Number to test.
 s = float(n)
 
-# Babylonian Method. Quadratically convergent. Initial guess required.
+# Babylonian Method. 
+# Quadratically convergent. 
+# Initial guess required.
+
+# Maximum number of iterations allowed.
+i = 50
+
+# Initial guess for square root, the closer to s the better.
+x = s/2
+
+while i > 0:
+    print("i =", i)
+    xi = 0.5*(x + s/x)
+
+    # Refine guess.
+    x = xi
+    print("xi =", round(xi,2), "x =", round(x,2))
+    
+    i = i - 1
