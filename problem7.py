@@ -32,20 +32,20 @@ s = float(n)
 
 # Babylonian Method: if x is an overestimate of sqrt(s), then s/x will be
 # an under estimate, and the average of both quantities will be an even better
-# estimate. repeat until desired accuracy achieved.
+# estimate. Repeat until desired accuracy achieved.
 # Quadratically convergent: number of correct digits in approximation doubles
 # with each iteration.
-# Initial guess required: best if close to s.
+# Initial guess required: best if close to sqrt(s).
 
 # Maximum number of iterations allowed.
-iter = 20
+iter = 100
 
 # Required accuracy.
 # Difference actually goes to 0.0 so make tol very small.
 tol = 0.0000001
 
-# Initial guess for the square root, the closer to s the better.
-x = 2*s
+# Initial guess for the square root, the closer to sqrt(s) the better.
+x = s/2
 
 # Start loop counter
 i = iter
@@ -66,3 +66,11 @@ while i > 0:
 
 print("The square root of", s, "is approximately", round(xi,2))
 print("Number of iterations:", (iter - i + 1))
+
+# Test program with s = 123456789.12
+# Answer = 11111.11
+# Guess = 0.1*s, iterations taken = 15 (If s=100, sqrt(s)=0.1*s)
+# Guess = s/2, iterations taken = 18 (If s=4, sqrt(4)=s/2)
+# Guess = s, iterations taken = 19 (If s=1, sqrt(1)=1)
+# Guess = 2*s, iterations taken = 20 (A ridiculous guess!)
+# So best guess depends on value of s. I'll leave s/2 as default.
