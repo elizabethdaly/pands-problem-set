@@ -92,21 +92,12 @@ Similar to the Babylonian method except that each iteration here is equivalent t
 
 I used the **Babylonian** method as only one calculation per loop iteration is required. An initial guess for the square root must be provided. This could be provided by the user but I picked a default value to keep things simple. Ideally that guess should be close to the actual square root for faster convergence. I stop the loop when a required accuracy is reached or, failing that, after a fixed number of iterations. I keep two decimal places in the answer. The program produces the following results:
 
-Number n  = 123456789.12 has solution = 11111.11
-Initial guess | Number of iterations required
----------------------------------------------
-0.1n | 15 
-n/2| 18 
-n |19 
-2n | 20 (A ridiculous guess!)
+n  = 123456789.12 has solution = 11111.11
+(Initial guess, Number of iterations required) = (0.1n, 15) (n/2, 18) (n, 19) (2n, 20)
 
-Number n  = 0.123456789 has solution = 0.35
-Initial guess | Number of iterations required
----------------------------------------------
-0.1n | 9
-n/2| 7
-n |6
-2n | 5 (Not so ridiculous now!)
+n  = 0.123456789 has solution = 0.35
+(Initial guess, Number of iterations required) = (0.1n, 9) (n/2, 7) (n, 6) (2n, 5)
+
 So the best guess very much depends on the number. I'll leave it as 0.1n by default.
 
 ## Problem 8
