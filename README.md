@@ -65,6 +65,15 @@ I researched primes & primality tests in a few places:
 * The trial division test: https://www.wikihow.com/Check-if-a-Number-Is-Prime
 which involves dividing the number (n) by each prime to floor(sqrt(n)). The drawback of this method is that it requires one to know the primes up to floor(sqrt(n)); I assume we don't know those. As a compromise, I will attempt to divide n by all odd numbers from 3 up to that limit instead. Could save some time by avoiding multiples of some of those odd numbers that we know are prime: 3, 5, 7, 11, 13, 17, etc.
 
+## Problem 6
+**File:** problem6.py
+
+**Write a program that takes a user input string and outputs every second word.**
+λ python problem6.py
+Program to print every second word of a sentence.
+Please enter a short sentence: The quick brown fox jumps over the lazy dog.
+The brown jumps the dog
+
 ## Problem 7
 **File:** problem7.py
 
