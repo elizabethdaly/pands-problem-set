@@ -122,6 +122,17 @@ I used stackoverflow to get rid of leading zero in date: https://stackoverflow.c
 
 **Write a program that reads in a text file and outputs every second line. The program should take the filename from an argument on the command line.**
 
-I looked at stackoverflow for suggestions on how to read in a file from the command line in Python: https://stackoverflow.com/questions/7439145/i-want-to-read-in-a-file-from-the-command-line-in-python. Suggestions included
-1. Python Standard Library fileinput module: https://docs.python.org/3/library/fileinput.html
-2. Python Standard Library sys module: https://docs.python.org/3/library/sys.html?highlight=sys
+I looked at stackoverflow for suggestions on how to read in a file from the command line in Python: https://stackoverflow.com/questions/7439145/i-want-to-read-in-a-file-from-the-command-line-in-python. Methods suggested included:
+* Python Standard Library fileinput module: https://docs.python.org/3/library/fileinput.html
+* Python Standard Library sys module: https://docs.python.org/3/library/sys.html?highlight=sys
+
+I chose the second option as I found it easier to understand. sys.argv
+is the list of command line arguments passed to a Python script. argv[0] is the script name, argv[1] is the file name. Run the program by typing:
+* python problem9.py heaney-poem.txt
+
+Output looks like:
+Program to print every second line from a txt file.
+Line 1 :  Blackberry-Picking By Seamus Heaney
+Line 3 :  For a full week, the blackberries would ripen.
+Line 5 :  Among others, red, green, hard as a knot.
+...
