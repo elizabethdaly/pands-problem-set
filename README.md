@@ -116,3 +116,12 @@ strftime() and strptime() Behavior: https://docs.python.org/3/library/datetime.h
 On first attempt have zero padding on day & hour, no suffix for day, and PM/AM instead of pm/am.
 
 I used stackoverflow to get rid of leading zero in date: https://stackoverflow.com/questions/904928/python-strftime-date-without-leading-0
+
+## Problem 9
+**File:** problem9.py
+
+**Write a program that reads in a text file and outputs every second line. The program should take the filename from an argument on the command line.**
+
+I looked at stackoverflow for suggestions on how to read in a file from the command line in Python: https://stackoverflow.com/questions/7439145/i-want-to-read-in-a-file-from-the-command-line-in-python. Suggestions included
+1. Python Standard Library fileinput module: https://docs.python.org/3/library/fileinput.html
+2. Python Standard Library sys module: https://docs.python.org/3/library/sys.html?highlight=sys
