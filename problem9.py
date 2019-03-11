@@ -11,22 +11,26 @@
 # Describe the program to the user.
 print("Program to print every second line from a txt file.")
 
-# fileimport to take filename from command line.
-# Open the file in read mode.
-import fileinput
-with fileinput.input(mode = 'r') as f:
+# sys to get access to command line arguments.
+# argv[0] is python script
+# argv[1] is file name
+import sys
+
+# Use i to keep track of line number.
+i = 1
+with open(sys.argv[1], 'r') as f:
     for line in f:
-        print(line, end='')
+        print(i, " ", line, end='')
+        i = i + 1
+        #Data = f.read()
+#print(data)
 
-
-
-# # Use fileinput module to 
+# # fileimport to take filename from command line.
+# # Open the file in read mode and print every line.
 # import fileinput
-# f = fileinput.input()
-# for line in f:
-#     print(line)
-
-
+# with fileinput.input(mode = 'r') as f:
+#     for line in f:
+#         print(line, end='')
 
 # # Try opening file from code first and print every line.
 # with open('heaney-poem.txt', 'r') as f:
