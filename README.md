@@ -69,10 +69,13 @@ which involves dividing the number (n) by each prime to floor(sqrt(n)). The draw
 **File:** problem6.py
 
 **Write a program that takes a user input string and outputs every second word.**
-λ python problem6.py
-Program to print every second word of a sentence.
-Please enter a short sentence: The quick brown fox jumps over the lazy dog.
-The brown jumps the dog
+
+Python tutorial for String Methods: https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str
+
+I use .replace() to get rid of any ',' in the string and .rstrip() to remove any trailing '.', '?', or '!'. I then use .split() to extract the individual words from the string to a list. I generate a new list containing every second word, and finally make a new string out of it using .join().
+
+Input: Dad, look at that amazing car!
+Output: Dad at amazing
 
 ## Problem 7
 **File:** problem7.py
