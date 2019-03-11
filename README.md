@@ -131,8 +131,13 @@ is the list of command line arguments passed to a Python script. argv[0] is the 
 * python problem9.py heaney-poem.txt
 
 Output looks like:
+
 Program to print every second line from a txt file.
+
 Line 1 :  Blackberry-Picking By Seamus Heaney
+
 Line 3 :  For a full week, the blackberries would ripen.
+
 Line 5 :  Among others, red, green, hard as a knot.
+
 ...
