@@ -15,13 +15,33 @@ print("Program to output today's date in a particular format.")
 import datetime as dt
 
 # Just get the date & time first
-# d = dt.datetime.today()    # also works
 d = dt.datetime.now()
+# print(type(d))
 print(d)
+
+# Extract the day of month to generate a suffix
+dom = dt.datetime.now().day
+
+# dom = 11 # For testing.
+print(dom, type(dom))
+
+
+def datesuffix(n):
+    if (n == 1 or n == 21 or n == 31):
+        suffix = "st"
+    elif (n == 2 or n == 22):
+        suffix = "nd"
+    elif (n == 3 or n == 23):
+        suffix = "rd"
+    else:
+        suffix = "th"
+
+print(suffix)
+
 
 # Now try to format it
 # Following has no suffix on day, zero pad on hr, PM vs pm. 
-print(dt.datetime.strftime(d,"%A, %B%e %Y at %I:%M%p")) 
+print(dt.datetime.strftime(d,"%A, %B %e %Y at %I:%M%p")) 
 
 # strftime options used:
 # %A Weekday as full name
@@ -32,3 +52,4 @@ print(dt.datetime.strftime(d,"%A, %B%e %Y at %I:%M%p"))
 # %I Hour as zero-padded decimal(12 hour clock)
 # %M Minutes
 # %p AM/PM
+
