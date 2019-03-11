@@ -16,11 +16,12 @@ print("Program to print every second line from a txt file.")
 # argv[1] is file name
 import sys
 
-# Use i to keep track of line number.
+# Use i to keep track of line number, want the odd lines.
 i = 1
 with open(sys.argv[1], 'r') as f:
     for line in f:
-        print(i, " ", line, end='')
+        if i % 2 == 1:
+            print("Line", i, ": ", line, end='')
         i = i + 1
         #Data = f.read()
 #print(data)
