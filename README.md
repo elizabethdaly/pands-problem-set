@@ -108,14 +108,20 @@ So the best guess very much depends on the number. I'll leave it as 0.1n by defa
 
 **Write a program that outputs today's date and time in the format "Monday, January 10th 2019 at 1.15pm"**
 
-Python Standard Library for datetime module: nttps://docs.python.org/3/library/datetime.html?highlight=datetime%20module#module-datetime
+Python Standard Library for datetime module: https://docs.python.org/3/library/datetime.html?highlight=datetime%20module#module-datetime
 
 Python Documentation for instructions on formatting year, month day etc
 strftime() and strptime() Behavior: https://docs.python.org/3/library/datetime.html?highlight=strftime#strftime-strptime-behavior
 
-On first attempt have zero padding on day & hour, no suffix for day, and PM/AM instead of pm/am.
+On first attempt have zero padding on day of month & hour, no suffix for day, and PM/AM instead of pm/am. I tackle these issues one by one:
 
-I used stackoverflow to get rid of leading zero in date: https://stackoverflow.com/questions/904928/python-strftime-date-without-leading-0
+1. I used stackoverflow to get rid of leading zero in day of month: https://stackoverflow.com/questions/904928/python-strftime-date-without-leading-0
+
+2. I wrote a small function to generate a suffix based on day of month.
+
+3. I use an if statement to display hour in 12 hour clock format and generate am/pm as appropriate. Note that strftime() does display 12 hour clock but with upper case AM/PM. Couldn't see an easier way to covert.
+
+4. Lastly, I get rid of zero padding on the hour by editing print() statement.
 
 ## Problem 9
 **File:** problem9.py
