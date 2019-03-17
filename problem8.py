@@ -49,8 +49,8 @@ print(d, "type=", type(d))
 # %I Hour as zero-padded decimal(12 hour clock)
 # %M Minutes
 # %p AM/PM
-# Following has no suffix on day, zero pad on hr, PM vs pm.
-print(dt.datetime.strftime(d,"%A, %B %e %Y at %I:%M%p"))
+# # Following has no suffix on day, zero pad on hr, PM vs pm.
+# print(dt.datetime.strftime(d,"%A, %B %e %Y at %I:%M%p"))
 
 # Extract the day of month to generate a suffix.
 dom = dt.datetime.now().day
