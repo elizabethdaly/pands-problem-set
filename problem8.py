@@ -39,8 +39,7 @@ def datesuffix(n):
 d = dt.datetime.now()
 print(d, "type=", type(d))
 
-# Now try to format it - not quite right.
-# Following has no suffix on day, zero pad on hr, PM vs pm. 
+# Now try to format it - not quite right using strftime(). 
 # strftime options used:
 # %A Weekday as full name
 # %B Month as full name
@@ -50,24 +49,28 @@ print(d, "type=", type(d))
 # %I Hour as zero-padded decimal(12 hour clock)
 # %M Minutes
 # %p AM/PM
+# Following has no suffix on day, zero pad on hr, PM vs pm.
 print(dt.datetime.strftime(d,"%A, %B %e %Y at %I:%M%p"))
 
-# Extract the day of month to generate a suffix
+# Extract the day of month to generate a suffix.
 dom = dt.datetime.now().day
 suf = datesuffix(dom)
-print(dom,suf)
+# print(dom,suf)    # Check.
 
-# Extract hour to generate am/pm lowercase & 12 hour clock.
+# Extract hour to generate am/pm lowercase & use 12 hour clock.
 hr = dt.datetime.now().hour
+minute = dt.datetime.now().minute
 
 if hr < 12:
     a = "am"
 else:
     a = "pm"
     hr = hr - 12
-print(hr,a)
 
-# Think I'll have to separate date into parts for correct formatting.
-print(dt.datetime.strftime(d,"%A, %B %e"), suf, dt.datetime.strftime(d,"%Y at"))
-print(dt.datetime.strftime(d,"%I:%M"), a)
+# print(hr, ":", minute, a, sep='') # Check.
+
+# I'll have to separate parts of date for correct formatting.
+print(dt.datetime.strftime(d,"%A, %B %e"), suf, \
+dt.datetime.strftime(d," %Y at "), \
+hr, ":", minute, a, sep='')
 
