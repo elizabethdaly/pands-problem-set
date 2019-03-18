@@ -119,15 +119,18 @@ On first attempt have zero padding on day of month & hour, no suffix for day, an
 
 2. I wrote a small function to generate a suffix based on day of month.
 
-3. I use an if statement to display hour in 12 hour clock format and generate am/pm as appropriate. Note that strftime() does display 12 hour clock but with upper case AM/PM. Couldn't see an easier way to covert.
+3. I use an if statement to display hour in 12 hour clock format and generate am/pm as appropriate. Note that strftime() does display 12 hour clock but with upper case AM/PM. Couldn't see an easier way to covert. Also get rid of zero padding on hour.
 
-4. Lastly, I get rid of zero padding on the hour by editing print() statement.
+4. Lastly, I fix spaces by editing print() statement.
 
 Run it a few times:
+
 λ python problem8.py
+
 Program to output today's date in a particular format.
 
 Monday, March 18 2019 at 10:48AM (from strftime)
+
 Monday, March 18th 2019 at 10:48am
 
 
