@@ -62,7 +62,6 @@ suf = datesuffix(dom)
 hr = dt.datetime.now().hour
 minute = dt.datetime.now().minute
 
-hr = 12
 # am or pm
 if hr < 12:
     a = "am"
@@ -73,9 +72,10 @@ else:
 if hr > 12:
     hr = hr - 12
 
-# print(hr, ":", minute, a, sep='') # Check.
+print(hr, ":", minute, a, sep='') # Check.
 
 # I'll have to separate parts of date for correct formatting.
+# Need to keep zero pad on minute, check at hr:0x
 print(dt.datetime.strftime(d,"%A, %B %e"), suf, \
-dt.datetime.strftime(d," %Y at "), \
-hr, ":", minute, a, sep='')
+dt.datetime.strftime(d," %Y at "), hr, ":", \
+dt.datetime.strftime(d,"%M"), a, sep='')
