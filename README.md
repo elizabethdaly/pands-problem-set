@@ -170,7 +170,7 @@ Line 5 :  Among others, red, green, hard as a knot.
 
 Initially, I generated lists containing the data I wished to plot. However, as only integer step sizes are allowed I instead used the NumPy arange() command to create a list of evenly spaced values within the required interval: https://docs.scipy.org/doc/numpy/reference/generated/numpy.arange.html?highlight=arange#numpy.arange
 
-I used the matplotlib documentation to edit plot sytle including:
+I used the matplotlib documentation to edit plotting sytle including:
 
 * Customize line styles: https://matplotlib.org/gallery/lines_bars_and_markers/line_styles_reference.html
 * Customize marker styles: https://matplotlib.org/api/markers_api.html
@@ -178,3 +178,4 @@ I used the matplotlib documentation to edit plot sytle including:
 * Position the legend in a good spot using legend(): https://matplotlib.org/api/legend_api.html?highlight=legend#module-matplotlib.legend
 * Save the figure _prob10plots.jpeg_ using savefig(): https://matplotlib.org/api/_as_gen/matplotlib.pyplot.savefig.html?highlight=savefig#matplotlib.pyplot.savefig
 
+![Screenshot](prob10plots.jpeg)
