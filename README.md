@@ -176,6 +176,6 @@ I used the matplotlib documentation to edit plotting sytle including:
 * Customize marker styles: https://matplotlib.org/api/markers_api.html
 * Format some legend text using TeX syntax: https://matplotlib.org/tutorials/text/text_intro.html?highlight=tex%20annotation
 * Position the legend in a good spot using legend(): https://matplotlib.org/api/legend_api.html?highlight=legend#module-matplotlib.legend
-* Save the figure _prob10plots.jpeg_ using savefig(): https://matplotlib.org/api/_as_gen/matplotlib.pyplot.savefig.html?highlight=savefig#matplotlib.pyplot.savefig
+* Save the figure (included in this repository) _prob10plots.jpeg_ using savefig(): https://matplotlib.org/api/_as_gen/matplotlib.pyplot.savefig.html?highlight=savefig#matplotlib.pyplot.savefig
 
 ![Screenshot](prob10plots.jpeg)
