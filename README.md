@@ -129,17 +129,15 @@ Program to output today's date in a particular format.
 
 Monday, March 18 2019 at 10:48AM (from strftime)
 
-Monday, March 18th 2019 at 10:48am
+Monday, March 18th 2019 at 10:48am (my script)
 
 Monday, March 18 2019 at 12:12PM (from strftime)
 
-Monday, March 18th 2019 at 12:12pm
+Monday, March 18th 2019 at 12:12pm (my script)
 
 Monday, March 18 2019 at 02:07PM (from strftime)
 
-Monday, March 18th 2019 at 2:07pm
-
-
+Monday, March 18th 2019 at 2:07pm (my script)
 
 ## Problem 9
 **File:** problem9.py
@@ -165,7 +163,18 @@ Line 3 :  For a full week, the blackberries would ripen.
 Line 5 :  Among others, red, green, hard as a knot.
 
 ...
-## Problem 9
-**File:** problem9.py
+## Problem 10
+**File:** problem10.py
 
 **Write a program that displays a plot of the functions x, x^2, and 2^x in the range [0, 4].**
+
+Initially, I generated lists containing the data I wished to plot. However, as only integer step sizes are allowed I instead used the NumPy arange() command to create a list of evenly spaced values within the required interval: https://docs.scipy.org/doc/numpy/reference/generated/numpy.arange.html?highlight=arange#numpy.arange
+
+I used the matplotlib documentation to edit plot sytle including:
+
+* Customize line styles: https://matplotlib.org/gallery/lines_bars_and_markers/line_styles_reference.html
+* Customize marker styles: https://matplotlib.org/api/markers_api.html
+* Format some legend text using TeX syntax: https://matplotlib.org/tutorials/text/text_intro.html?highlight=tex%20annotation
+* Position the legend in a good spot using legend(): https://matplotlib.org/api/legend_api.html?highlight=legend#module-matplotlib.legend
+* Save the figure _prob10plots.jpeg_ using savefig(): https://matplotlib.org/api/_as_gen/matplotlib.pyplot.savefig.html?highlight=savefig#matplotlib.pyplot.savefig
+
