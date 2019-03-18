@@ -123,15 +123,21 @@ On first attempt have zero padding on day of month & hour, no suffix for day, an
 
 4. Lastly, I fix spaces by editing print() statement.
 
-Run it a few times:
-
-λ python problem8.py
+Run it a few times: λ python problem8.py
 
 Program to output today's date in a particular format.
 
 Monday, March 18 2019 at 10:48AM (from strftime)
 
 Monday, March 18th 2019 at 10:48am
+
+Monday, March 18 2019 at 12:12PM (from strftime)
+
+Monday, March 18th 2019 at 12:12pm
+
+Monday, March 18 2019 at 02:07PM (from strftime)
+
+Monday, March 18th 2019 at 2:07pm
 
 
 
