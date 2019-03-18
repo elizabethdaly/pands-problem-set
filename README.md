@@ -123,6 +123,15 @@ On first attempt have zero padding on day of month & hour, no suffix for day, an
 
 4. Lastly, I get rid of zero padding on the hour by editing print() statement.
 
+Run it a few times:
+λ python problem8.py
+Program to output today's date in a particular format.
+
+Monday, March 18 2019 at 10:48AM (from strftime)
+Monday, March 18th 2019 at 10:48am
+
+
+
 ## Problem 9
 **File:** problem9.py
 
@@ -147,3 +156,7 @@ Line 3 :  For a full week, the blackberries would ripen.
 Line 5 :  Among others, red, green, hard as a knot.
 
 ...
+## Problem 9
+**File:** problem9.py
+
+**Write a program that displays a plot of the functions x, x^2, and 2^x in the range [0, 4].**
