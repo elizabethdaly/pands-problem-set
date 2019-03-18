@@ -19,23 +19,40 @@ import numpy as np
 # x values are 0 to 4 in steps of 0.5
 x = np.arange(0, 4.5, 0.5)
 
+# Customize line/marker styles and use TeX to format labels.
 plt.plot(x, x, '-o', label="x")
-plt.plot(x, x**2, '--x', label="x^2")
-plt.plot(x, 2**x, ':D', label="2^x")
-plt.ylabel('f(x)')
-plt.xlabel('x')
+plt.plot(x, x**2, '--x', label=" $x^2$ ")
+plt.plot(x, 2**x, ':D', label=" $2^x$ ")
 
-plt.title("Some functions of x")
+# Add axis titles.
+plt.ylabel('f(x)', fontsize=16)
+plt.xlabel('x', fontsize=16)
 
-plt.legend(loc='upper left')
+# Set x axis major ticks to match x values used in calculation. 
+plt.xticks(x)
+
+# Set axis limits.
+plt.xlim(0,4.5)
+plt.ylim(0,18)
+# or just make best use of space with tight layout (squashes graph title).
+# plt.tight_layout()
+
+# Graph title.
+plt.title("Problem 10: Some functions of x", fontsize=18)
+
+# Position legend in good spot wrt these curves.
+plt.legend(loc='upper left', fontsize=14)
+
+# Turn on the grid.
 plt.grid()
 
+# Save the figure.
+plt.savefig('prob10plots.jpeg')
+
+# Show the plot.
 plt.show()
 
-# might need to save plots/ plot if all on one figure
-# annotate [plots x, x^2, 2^x]
-
-################################################################################
+###############################################################################
 # # Did it with lists first but not versatile.
 # #
 # # Generate the list of x values.
