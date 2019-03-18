@@ -62,7 +62,7 @@ suf = datesuffix(dom)
 hr = dt.datetime.now().hour
 minute = dt.datetime.now().minute
 
-
+hr = 12
 # am or pm
 if hr < 12:
     a = "am"
@@ -70,7 +70,7 @@ else:
     a = 'pm'
 
 # 12 hour clock
-if hr >= 12:
+if hr > 12:
     hr = hr - 12
 
 # print(hr, ":", minute, a, sep='') # Check.
@@ -79,4 +79,3 @@ if hr >= 12:
 print(dt.datetime.strftime(d,"%A, %B %e"), suf, \
 dt.datetime.strftime(d," %Y at "), \
 hr, ":", minute, a, sep='')
-
